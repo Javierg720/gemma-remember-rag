@@ -1,0 +1,31 @@
+# Memory Anchor RAG - Dependencies
+# Core RAG Components
+chromadb>=0.4.22                    # Local vector database
+sentence-transformers>=2.3.1         # For CLIP embeddings
+torch>=2.1.0                         # PyTorch
+torchvision>=0.16.0                  # For image processing
+Pillow>=10.1.0                       # Image handling
+
+# Audio Processing
+openai-whisper>=20231117             # Audio transcription & embeddings
+librosa>=0.10.1                      # Audio analysis
+soundfile>=0.12.1                    # Audio file handling
+
+# LLM Integration
+transformers>=4.36.0                 # Gemma 4 model
+accelerate>=0.25.0                   # Model acceleration
+bitsandbytes>=0.41.3                 # Quantization support
+
+# UI
+gradio>=4.15.0                       # Web interface
+gradio-client>=0.8.1                 # Gradio client utilities
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.1.0
+tqdm>=4.66.0
+pyyaml>=6.0.1
+
+# Utilities
+python-dotenv>=1.0.0                 # Environment variables
+loguru>=0.7.2                        # Better logging

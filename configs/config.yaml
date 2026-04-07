@@ -1,0 +1,21 @@
+# Memory Anchor RAG Configuration
+# Everything runs locally — no cloud, no data leaks.
+
+data:
+  raw_dir: ./data/raw          # Family photos, audio, captions
+  embeddings_dir: ./data/embeddings  # ChromaDB persistent storage
+
+models:
+  clip: clip-ViT-B-32          # Image embeddings (fast, 512-dim)
+  text: all-MiniLM-L6-v2       # Text embeddings (fast, 384-dim)
+  whisper: base                 # Audio transcription (base = 74M params)
+  llm: google/gemma-3-4b-it    # Response generation (swap to gemma-4-e4b-it when available)
+
+retrieval:
+  top_k: 3                     # Number of memories to retrieve
+  similarity_threshold: 0.3    # Minimum cosine similarity to include
+
+ui:
+  host: 127.0.0.1              # Local only — never expose externally
+  port: 7860
+  share: false                 # Never create public Gradio link
