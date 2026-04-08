@@ -228,7 +228,8 @@ That transformation — from data to warmth — is what makes Gemma Remember a c
 
 ## Links
 
-- **Kaggle Notebook**: [Gemma Remember RAG — Multimodal Retrieval for Dementia Care](https://www.kaggle.com/frgrgdfgd/gemma-remember-multimodal-rag-for-dementia-care)
+- **Project Website**: [gemma-remember.vercel.app](https://gemma-remember.vercel.app)
+- **Kaggle Notebook**: [Gemma Remember RAG — Multimodal Retrieval for Dementia Care](https://www.kaggle.com/code/frgrgdfgd/gemma-remember-rag-for-dementia-care)
 - **GitHub Repository**: [github.com/Javierg720/gemma-remember-rag](https://github.com/Javierg720/gemma-remember-rag)
 - **Original Fine-Tuning Version**: [github.com/Javierg720/gemma-remember](https://github.com/Javierg720/gemma-remember)
 
