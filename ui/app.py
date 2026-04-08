@@ -1,5 +1,5 @@
 """
-Memory Anchor — Gradio UI
+Gemma Remember — Gradio UI
 Simple, warm interface for dementia care.
 Camera upload, text query, voice playback.
 """
@@ -12,17 +12,17 @@ import os
 
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from src.rag_engine import MemoryAnchorRAG
+from src.rag_engine import GemmaRememberRAG
 
 
 # ── Global RAG engine ────────────────────────────────────────────
 
-rag: MemoryAnchorRAG = None
+rag: GemmaRememberRAG = None
 
 
 def initialize():
     global rag
-    rag = MemoryAnchorRAG(
+    rag = GemmaRememberRAG(
         persist_dir="./data/embeddings",
         clip_model="clip-ViT-B-32",
         text_model="all-MiniLM-L6-v2",
@@ -83,7 +83,7 @@ def create_app():
     initialize()
 
     with gr.Blocks(
-        title="Memory Anchor",
+        title="Gemma Remember",
         theme=gr.themes.Soft(
             primary_hue="amber",
             secondary_hue="orange",
@@ -97,7 +97,7 @@ def create_app():
 
         gr.HTML("""
         <div class="main-header">
-            <h1>Memory Anchor</h1>
+            <h1>Gemma Remember</h1>
             <p>Helping you remember the people you love</p>
         </div>
         """)

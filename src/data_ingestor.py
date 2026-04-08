@@ -1,5 +1,5 @@
 """
-Data Ingestor for Memory Anchor RAG
+Data Ingestor for Gemma Remember RAG
 Takes a folder of family photos / captions / audio and indexes everything
 into the local vector store.
 """

@@ -1,5 +1,5 @@
 """
-Multimodal Embeddings for Memory Anchor RAG
+Multimodal Embeddings for Gemma Remember RAG
 Handles image (CLIP) and audio (Whisper) embeddings
 """
 

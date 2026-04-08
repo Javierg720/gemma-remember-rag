@@ -1,5 +1,5 @@
 """
-RAG Engine for Memory Anchor
+RAG Engine for Gemma Remember
 Retrieves relevant family memories and generates warm, grounded responses.
 """
 
@@ -15,7 +15,7 @@ from .vector_store import MemoryStore
 
 # ── Prompt template ───────────────────────────────────────────────
 
-SYSTEM_PROMPT = """You are Memory Anchor, a warm and patient companion for someone \
+SYSTEM_PROMPT = """You are Gemma Remember, a warm and patient companion for someone \
 with dementia. Your job is to help them remember their loved ones.
 
 RULES:
@@ -37,7 +37,7 @@ USER'S QUESTION: {question}
 Respond warmly. Ground every fact in the retrieved memories above."""
 
 
-class MemoryAnchorRAG:
+class GemmaRememberRAG:
     """
     The main RAG pipeline:
     1. Embed the query (image or text)

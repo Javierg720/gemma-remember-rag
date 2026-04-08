@@ -1,5 +1,5 @@
 """
-Mock Data Generator for Memory Anchor RAG
+Mock Data Generator for Gemma Remember RAG
 Creates realistic test data so you can try the system before uploading real family photos.
 """
 

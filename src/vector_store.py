@@ -1,5 +1,5 @@
 """
-Vector Store for Memory Anchor RAG
+Vector Store for Gemma Remember RAG
 Local ChromaDB — all data stays on-device, never leaves.
 """
 

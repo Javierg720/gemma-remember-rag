@@ -1,4 +1,4 @@
-# Memory Anchor RAG - Dependencies
+# Gemma Remember RAG - Dependencies
 # Core RAG Components
 chromadb>=0.4.22                    # Local vector database
 sentence-transformers>=2.3.1         # For CLIP embeddings

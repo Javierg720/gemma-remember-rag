@@ -1,4 +1,4 @@
-# Memory Anchor: Multimodal RAG for Dementia Care
+# Gemma Remember: Multimodal RAG for Dementia Care
 
 **The Gemma 4 Good Hackathon — Submission Writeup**
 
@@ -17,9 +17,9 @@ Current solutions are either:
 
 ---
 
-## Our Solution: Memory Anchor
+## Our Solution: Gemma Remember
 
-Memory Anchor is an **offline, privacy-first companion app** that helps dementia patients remember their loved ones using **Multimodal Retrieval-Augmented Generation (RAG)** powered by Gemma.
+Gemma Remember is an **offline, privacy-first companion app** that helps dementia patients remember their loved ones using **Multimodal Retrieval-Augmented Generation (RAG)** powered by Gemma.
 
 ### How It Works
 
@@ -47,7 +47,7 @@ Patient shows a photo or asks: "Who is this?"
 
 ### Why RAG Instead of Fine-Tuning?
 
-We initially built Memory Anchor using LoRA fine-tuning on Gemma 4. It worked, but RAG is fundamentally better for this use case:
+We initially built Gemma Remember using LoRA fine-tuning on Gemma 4. It worked, but RAG is fundamentally better for this use case:
 
 | Challenge | Fine-Tuning | RAG (Our Approach) |
 |-----------|-------------|---------------------|
@@ -123,11 +123,11 @@ For a dementia care tool, **the ability to never hallucinate is not a feature �
 - **55M+ dementia patients worldwide** who struggle to recognize loved ones
 - **Family caregivers** (estimated 11M in the US alone) who face emotional exhaustion repeating introductions
 - **Care facilities** that need scalable tools for personalized patient care
-- **Low-resource communities** where specialist care is unavailable — Memory Anchor works offline on consumer hardware
+- **Low-resource communities** where specialist care is unavailable — Gemma Remember works offline on consumer hardware
 
 ### Why It Matters
 
-Dementia patients experience "lucid moments" — brief windows of clarity where recognition can be triggered by the right cue. A familiar photo, a loved one's voice, a specific story. Memory Anchor is designed to provide exactly these cues at the right moment.
+Dementia patients experience "lucid moments" — brief windows of clarity where recognition can be triggered by the right cue. A familiar photo, a loved one's voice, a specific story. Gemma Remember is designed to provide exactly these cues at the right moment.
 
 Research supports this approach:
 - **Reminiscence therapy** using photos and personal items is an evidence-based intervention for dementia (Woods et al., 2018)
@@ -160,19 +160,19 @@ Our notebook demonstrates the full pipeline with 8 mock family members:
 
 ### Key Metric: Zero Hallucination
 
-Every fact in every response traces back to stored family data. Memory Anchor never invents names, dates, relationships, or stories. This is the single most important property for a dementia care tool.
+Every fact in every response traces back to stored family data. Gemma Remember never invents names, dates, relationships, or stories. This is the single most important property for a dementia care tool.
 
 ---
 
 ## Gemma's Role
 
-Gemma is the heart of Memory Anchor's response generation. While CLIP and ChromaDB handle retrieval, **Gemma transforms raw data into warm, human conversation.**
+Gemma is the heart of Gemma Remember's response generation. While CLIP and ChromaDB handle retrieval, **Gemma transforms raw data into warm, human conversation.**
 
 Without Gemma, the system returns: `Name: Sarah, Relationship: daughter, Caption: Sarah baking cookies...`
 
 With Gemma, the system says: *"This is Sarah, your daughter. She loves baking — especially those chocolate chip cookies you two always made together. She graduated from nursing school in 2018. She calls you every Sunday evening. Would you like to hear her voice?"*
 
-That transformation — from data to warmth — is what makes Memory Anchor a companion, not a database.
+That transformation — from data to warmth — is what makes Gemma Remember a companion, not a database.
 
 ### Why Gemma Specifically?
 
@@ -228,10 +228,10 @@ That transformation — from data to warmth — is what makes Memory Anchor a co
 
 ## Links
 
-- **Kaggle Notebook**: [Memory Anchor RAG — Multimodal Retrieval for Dementia Care](https://www.kaggle.com/frgrgdfgd/memory-anchor-multimodal-rag-for-dementia-care)
-- **GitHub Repository**: [github.com/Javierg720/memory-anchor-rag](https://github.com/Javierg720/memory-anchor-rag)
-- **Original Fine-Tuning Version**: [github.com/Javierg720/memory-anchor](https://github.com/Javierg720/memory-anchor)
+- **Kaggle Notebook**: [Gemma Remember RAG — Multimodal Retrieval for Dementia Care](https://www.kaggle.com/frgrgdfgd/gemma-remember-multimodal-rag-for-dementia-care)
+- **GitHub Repository**: [github.com/Javierg720/gemma-remember-rag](https://github.com/Javierg720/gemma-remember-rag)
+- **Original Fine-Tuning Version**: [github.com/Javierg720/gemma-remember](https://github.com/Javierg720/gemma-remember)
 
 ---
 
-*Memory Anchor: Because no one should forget the people who love them.*
+*Gemma Remember: Because no one should forget the people who love them.*
