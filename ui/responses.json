@@ -1,0 +1,139 @@
+{
+  "photo_queries": {
+    "sarah": {
+      "name": "Sarah",
+      "relationship": "Your daughter",
+      "color": "#FFB6C1",
+      "response": "Hello there. I can help you remember. You asked about Sarah.\n\nSarah is your youngest daughter. She loves baking, especially those chocolate chip cookies you two always made together. She graduated from State University in 2018 with a degree in nursing. She calls you every Sunday evening.",
+      "captions": [
+        "Sarah smiling at her college graduation, May 2018",
+        "Sarah baking cookies in the kitchen, Christmas 2019",
+        "Sarah and Mom at the beach, summer 2020"
+      ],
+      "story": "Sarah is your youngest daughter. She loves baking — especially those chocolate chip cookies you two always made together. She graduated from State University in 2018 with a degree in nursing. She calls you every Sunday evening."
+    },
+    "arki": {
+      "name": "Arki",
+      "relationship": "Your son",
+      "color": "#ADD8E6",
+      "response": "Hello. I am here to help you remember.\n\nYou asked who this is and what he built for you. This is Arki, your eldest son. Do you remember when Arki was building that beautiful birdhouse in the backyard back in 1998? He built that for you.",
+      "captions": [
+        "Arki building the birdhouse in the backyard, spring 1998",
+        "Arki at his wedding, June 2015",
+        "Arki holding baby Maya, his first child, 2020"
+      ],
+      "story": "Arki is your eldest son. He built you that beautiful birdhouse in the backyard back in '98 — it's still there! He married Lisa in 2015 and they have a daughter named Maya. He works as a carpenter, just like his grandfather."
+    },
+    "maya": {
+      "name": "Maya",
+      "relationship": "Your granddaughter",
+      "color": "#FFFFC8",
+      "response": "Hello there. Let me help you remember Maya.\n\nMaya is your granddaughter — Arki and Lisa's little girl. She was born in 2020. She loves drawing and always makes pictures for you. She calls you 'Nana'.",
+      "captions": [
+        "Maya's first birthday party, 2021",
+        "Maya drawing pictures with Grandma, 2023",
+        "Maya at the park with her teddy bear, 2024"
+      ],
+      "story": "Maya is your granddaughter — Arki and Lisa's little girl. She was born in 2020. She loves drawing and always makes pictures for you. She calls you 'Nana'."
+    },
+    "robert": {
+      "name": "Robert",
+      "relationship": "Your husband",
+      "color": "#C8E6C8",
+      "response": "Hello there. I can help you remember Robert.\n\nRobert is your husband. You married in 1975. He loved fishing and tending his rose garden. His favorite song was 'Moon River'. He always said you were the best thing that ever happened to him.",
+      "captions": [
+        "Robert and you on your wedding day, 1975",
+        "Robert fishing at the lake, summer 1990",
+        "Robert in the garden with his roses, 2010"
+      ],
+      "story": "Robert is your husband. You married in 1975. He loved fishing and tending his rose garden. His favorite song was 'Moon River'. He always said you were the best thing that ever happened to him."
+    },
+    "margaret": {
+      "name": "Margaret",
+      "relationship": "Your best friend",
+      "color": "#E6C8E6",
+      "response": "Hello there. Let me tell you about Margaret.\n\nMargaret is your best friend since high school — over 55 years! You two go to the quilting circle every Thursday at the community center. She lives three houses down on Maple Street.",
+      "captions": [
+        "Margaret and you at the quilting circle, 2018",
+        "Margaret's 75th birthday party, 2022"
+      ],
+      "story": "Margaret is your best friend since high school — over 55 years! You two go to the quilting circle every Thursday at the community center. She lives three houses down on Maple Street."
+    },
+    "buddy": {
+      "name": "Buddy",
+      "relationship": "Your pet dog",
+      "color": "#FFD78C",
+      "response": "Hello there. I can certainly tell you about your dog.\n\nYou have a dog named Buddy. He is your golden retriever. You got him as a puppy in 2019. Buddy loves belly rubs and follows you everywhere. And he also sleeps at the foot of your bed every night.",
+      "captions": [
+        "Buddy as a puppy, the day you brought him home, 2019",
+        "Buddy playing in the yard with Maya, 2023"
+      ],
+      "story": "Buddy is your golden retriever. You got him as a puppy in 2019. He loves belly rubs and follows you everywhere. He sleeps at the foot of your bed every night."
+    },
+    "dr_chen": {
+      "name": "Dr. Chen",
+      "relationship": "Your doctor",
+      "color": "#DCDCF0",
+      "response": "Hello there. I can help you remember.\n\nYou see Dr. Chen every Tuesday afternoon at 2pm at the Riverside Clinic. She has been your doctor for five years and is very kind.",
+      "captions": [
+        "Dr. Chen at the clinic, your Tuesday checkups"
+      ],
+      "story": "Dr. Chen is your doctor. You see her every Tuesday afternoon at 2pm at the Riverside Clinic. She's been your doctor for 5 years and is very kind."
+    },
+    "lisa": {
+      "name": "Lisa",
+      "relationship": "Your daughter-in-law",
+      "color": "#FFDAB9",
+      "response": "Hello there. Let me help you remember Lisa.\n\nLisa is Arki's wife — your daughter-in-law. She's a schoolteacher and always brings your favorite lemon cake when she visits. She and Arki married in June 2015 and they have a daughter named Maya.",
+      "captions": [
+        "Lisa and Arki's wedding day, June 2015",
+        "Lisa teaching Maya to ride a bike, 2023"
+      ],
+      "story": "Lisa is Arki's wife — your daughter-in-law. She's a schoolteacher and always brings your favorite lemon cake when she visits."
+    },
+    "uncle_joe": {
+      "name": "Uncle Joe",
+      "relationship": "Your uncle (husband's brother)",
+      "color": "#B4C8B4",
+      "response": "Hello there. I can certainly help you remember about Uncle Joe.\n\nUncle Joe was a jazz musician in New Orleans. He played jazz at the French Quarter in 2005. He was Robert's brother, and he taught Arki to play guitar. Uncle Joe always wore a fedora.",
+      "captions": [
+        "Uncle Joe playing jazz at the French Quarter, 2005"
+      ],
+      "story": "Uncle Joe is Robert's brother. He was a jazz musician in New Orleans. He taught Arki to play guitar. He always wears a fedora."
+    }
+  },
+  "text_queries": {
+    "who bakes cookies with me?": {
+      "match": "sarah",
+      "response": "Hello there. I can help you remember.\n\nSarah loves baking cookies with you. You two always made those chocolate chip cookies together."
+    },
+    "tell me about my dog": {
+      "match": "buddy",
+      "response": "Hello there. I can certainly tell you about your dog.\n\nYou have a dog named Buddy. He is your golden retriever. You got him as a puppy in 2019. Buddy loves belly rubs and follows you everywhere. And he also sleeps at the foot of your bed every night."
+    },
+    "when do i see the doctor?": {
+      "match": "dr_chen",
+      "response": "Hello there. I can help you remember.\n\nYou see Dr. Chen every Tuesday afternoon at 2pm at the Riverside Clinic. She has been your doctor for five years and is very kind."
+    },
+    "who is my granddaughter?": {
+      "match": "maya",
+      "response": "Hello there. Let me help you remember.\n\nYour granddaughter is Maya — she's Arki and Lisa's little girl. She was born in 2020. She loves drawing and always makes pictures for you. She calls you 'Nana'."
+    },
+    "who played jazz?": {
+      "match": "uncle_joe",
+      "response": "Hello there. I can certainly help you remember.\n\nUncle Joe was a jazz musician in New Orleans. He played jazz at the French Quarter in 2005. He was Robert's brother, and he taught Arki to play guitar. Uncle Joe always wore a fedora."
+    },
+    "tell me about my husband": {
+      "match": "robert",
+      "response": "Hello there. I can help you remember Robert.\n\nRobert is your husband. You married in 1975. He loved fishing and tending his rose garden. His favorite song was 'Moon River'. He always said you were the best thing that ever happened to him."
+    },
+    "who is my best friend?": {
+      "match": "margaret",
+      "response": "Hello there. Let me tell you about Margaret.\n\nMargaret is your best friend since high school — over 55 years! You two go to the quilting circle every Thursday at the community center. She lives three houses down on Maple Street."
+    },
+    "who is arki?": {
+      "match": "arki",
+      "response": "Hello there. Let me help you remember.\n\nArki is your eldest son. He built you that beautiful birdhouse in the backyard back in '98 — it's still there! He married Lisa in 2015 and they have a daughter named Maya. He works as a carpenter, just like his grandfather."
+    }
+  }
+}
