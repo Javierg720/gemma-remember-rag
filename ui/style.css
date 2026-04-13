@@ -33,7 +33,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8f7fc;c
 .splash-logo{position:relative;width:100px;height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
 .logo-ring{position:absolute;inset:0;border-radius:50%;border:2px solid transparent;background:linear-gradient(135deg,rgba(123,110,246,.15),rgba(232,123,180,.15));animation:pulse 2.5s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.7}}
-.splash-title{font-size:2rem;font-weight:700;background:linear-gradient(135deg,#7B6EF6,#E87BB4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.splash-title{font-size:2rem;font-weight:700;background:linear-gradient(135deg,#60A5FA,#6366F1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .splash-sub{font-size:1.0625rem;color:#8b8a99;max-width:280px}
 .splash-powered{font-size:.8125rem;color:#b5b4c0;margin-top:24px}
 
