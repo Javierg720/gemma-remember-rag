@@ -37,14 +37,9 @@
 
     <!-- ===== HOME ===== -->
     <div id="home" class="screen">
-      <header class="header">
-        <div>
-          <h2 class="greeting">Good <span id="timeOfDay">morning</span></h2>
-          <p class="greeting-sub">How can I help you remember?</p>
-        </div>
-      </header>
-
-      <main class="home-body">
+      <div class="home-hero">
+        <h2 class="greeting">Good <span id="timeOfDay">morning</span></h2>
+        <p class="greeting-sub">How can I help you remember?</p>
         <div class="action-row">
           <button class="action-card" onclick="showScreen('identify')">
             <div class="action-icon purple">
@@ -61,7 +56,9 @@
             <span class="action-desc">About family or daily life</span>
           </button>
         </div>
+      </div>
 
+      <main class="home-body">
         <section class="section">
           <h3 class="section-title">Your Family</h3>
           <div class="family-scroll" id="familyScroll"></div>
