@@ -135,5 +135,405 @@
       "match": "arki",
       "response": "Hello there. Let me help you remember.\n\nArki is your eldest son. He built you that beautiful birdhouse in the backyard back in '98 — it's still there! He married Lisa in 2015 and they have a daughter named Maya. He works as a carpenter, just like his grandfather."
     }
+  },
+  "general_responses": {
+    "identity": {
+      "name": {
+        "response": "Your name is Eleanor. People who love you call you Ellie. You were born on March 15, 1948. You grew up in Cedar Falls and have lived in this town most of your life."
+      },
+      "age": {
+        "response": "You are 78 years old. You were born on March 15, 1948. Your birthday is in March — your family always gets you a lemon cake from the bakery on Main Street."
+      },
+      "birthday": {
+        "response": "Your birthday is March 15th. You were born in 1948. Last year, Sarah and Arki surprised you with a small party. Maya drew you a birthday card with butterflies on it."
+      },
+      "where_from": {
+        "response": "You grew up in Cedar Falls. Your parents were James and Dorothy. You went to Cedar Falls High School, where you met your best friend Margaret. You moved to Maple Street after you married Robert in 1975."
+      },
+      "job": {
+        "response": "You were a librarian at the Cedar Falls Public Library for over 30 years. You loved helping children pick out books during story time. You retired in 2010. Your coworkers gave you a beautiful scrapbook when you left."
+      }
+    },
+    "family_overview": {
+      "married": {
+        "response": "Yes, you are married to Robert. You got married in 1975 — that's almost 50 years together! Robert loves fishing and his rose garden. His favorite song is 'Moon River'. He always says you're the best thing that ever happened to him."
+      },
+      "children": {
+        "response": "You have two children. Your eldest is Arki, your son. He is a carpenter and married to Lisa. Your youngest is Sarah, your daughter. She is a nurse. Both of them love you very much and visit often."
+      },
+      "how_many_kids": {
+        "response": "You have two children — Arki and Sarah. Arki is your eldest son, he's a carpenter and married to Lisa. Sarah is your youngest daughter, she's a nurse. You also have a granddaughter named Maya, who is Arki and Lisa's little girl."
+      },
+      "oldest_child": {
+        "response": "Your oldest child is Arki, your son. He was born in 1978. He works as a carpenter, just like his grandfather. He married Lisa in 2015 and they have a daughter named Maya."
+      },
+      "youngest_child": {
+        "response": "Your youngest child is Sarah, your daughter. She graduated from State University in 2018 with a nursing degree. She loves baking cookies with you and calls you every Sunday evening."
+      },
+      "grandchildren": {
+        "response": "You have one grandchild — Maya. She is Arki and Lisa's daughter, born in 2020. She loves drawing and always makes pictures for you. She calls you 'Nana'. You love spending time with her."
+      },
+      "family_members": {
+        "response": "Your family includes: Robert (your husband), Arki (your eldest son), Lisa (Arki's wife, your daughter-in-law), Maya (your granddaughter), Sarah (your youngest daughter), and Buddy (your golden retriever). Uncle Joe is Robert's brother. Margaret is your best friend."
+      },
+      "siblings": {
+        "response": "You have one brother named Thomas. He lives in Portland with his wife Helen. You talk on the phone every few weeks. He's two years older than you."
+      }
+    },
+    "daily_routine": {
+      "morning": {
+        "response": "Every morning, you usually wake up around 7:30am. Buddy wakes you up with a nudge. You have breakfast — usually toast with jam and a cup of tea. Then you like to sit in the garden if the weather is nice."
+      },
+      "breakfast": {
+        "response": "For breakfast, you usually have toast with strawberry jam and a cup of tea with milk. Sometimes Sarah makes you pancakes on Sundays when she visits. You also like oatmeal with honey on cold mornings."
+      },
+      "lunch": {
+        "response": "Lunch is usually around noon. You like a simple sandwich — turkey and cheese is your favorite. Sometimes you have soup. On Thursdays, you often have lunch with Margaret after quilting."
+      },
+      "dinner": {
+        "response": "Dinner is usually around 6:00pm. You and Robert often eat together in the kitchen. You like roast chicken, meatloaf, and pasta. On Sundays, Sarah sometimes brings dinner when she visits."
+      },
+      "evening": {
+        "response": "In the evenings, you and Robert usually watch TV together after dinner. You enjoy watching nature documentaries and old movies. You usually go to bed around 9:30pm. Buddy sleeps at the foot of your bed."
+      },
+      "bedtime": {
+        "response": "You usually go to bed around 9:30pm. You take your evening medicine at 9:00pm — it's in the blue pill box on the kitchen counter. Buddy sleeps at the foot of your bed every night. Robert usually reads before turning off the light."
+      },
+      "today": {
+        "response": "Every day is a little different, but here's what a typical day looks like: breakfast around 7:30am, a walk with Buddy in the morning, lunch at noon, some time in the garden or reading, dinner at 6pm, and bed around 9:30. On Tuesdays you see Dr. Chen, on Thursdays you go to quilting with Margaret."
+      }
+    },
+    "weekly_schedule": {
+      "monday": {
+        "response": "On Mondays, you usually have a quiet day at home. You like to tend the garden in the morning and read in the afternoon. Sometimes Arki stops by after work to check on things around the house."
+      },
+      "tuesday": {
+        "response": "On Tuesdays, you have your doctor's appointment with Dr. Chen at 2pm at the Riverside Clinic. Arki or Sarah usually drives you there. After the appointment, you sometimes stop for ice cream."
+      },
+      "wednesday": {
+        "response": "On Wednesdays, you usually spend time at home. You like to do a little baking or work on your crossword puzzles. Lisa sometimes brings Maya over in the afternoon for a visit."
+      },
+      "thursday": {
+        "response": "Thursdays are quilting days! You go to the community center with your best friend Margaret for quilting circle. It starts at 10am. You've been going together for years. After quilting, you and Margaret often have lunch."
+      },
+      "friday": {
+        "response": "On Fridays, Sarah usually calls to check in and make plans for the weekend. You might do some light shopping or go for a walk in the park with Buddy. It's a relaxed day."
+      },
+      "saturday": {
+        "response": "Saturdays are family days. Arki, Lisa, and Maya often come over for lunch or dinner. Maya loves playing in the backyard with Buddy. Robert sometimes takes Maya to the park."
+      },
+      "sunday": {
+        "response": "On Sundays, Sarah calls you in the evening — she does this every week. Sometimes she comes over and you bake cookies together. Robert likes to tend his rose garden on Sunday mornings."
+      }
+    },
+    "home_and_places": {
+      "where_live": {
+        "response": "You live at 42 Maple Street, in your house. You and Robert moved here after you got married in 1975. It's a cozy house with a nice garden in the back. Margaret lives three houses down."
+      },
+      "address": {
+        "response": "Your address is 42 Maple Street. You've lived here since 1975, when you and Robert got married. It's a quiet, friendly neighborhood."
+      },
+      "bathroom": {
+        "response": "The bathroom is down the hall, second door on the left. There's also a small bathroom downstairs near the kitchen."
+      },
+      "bedroom": {
+        "response": "Your bedroom is upstairs, the first door on the right. Your bed has the blue quilt that Margaret helped you make. Buddy sleeps at the foot of your bed."
+      },
+      "kitchen": {
+        "response": "The kitchen is at the back of the house, past the living room. Your medicines are in the blue pill box on the counter. The cookie jar is on the counter next to the window."
+      },
+      "garden": {
+        "response": "The garden is in the backyard, through the kitchen door. Robert's rose garden is along the back fence. The birdhouse that Arki built is near the old oak tree. You love sitting out there in the morning."
+      },
+      "park": {
+        "response": "The park is about a five-minute walk from your house — you go left on Maple Street and then right on Oak Avenue. You like to walk Buddy there. There are nice benches by the pond."
+      },
+      "church": {
+        "response": "You go to St. Mary's Church on Elm Street. It's about a 10-minute drive. You've been going there for many years. The Sunday service is at 10am."
+      },
+      "store": {
+        "response": "The grocery store is on Main Street, about a 5-minute drive. You usually shop on Fridays. Sarah or Arki often help you with the shopping."
+      },
+      "clinic": {
+        "response": "Your doctor's office is at the Riverside Clinic, on River Road. You see Dr. Chen there every Tuesday at 2pm. Arki or Sarah drives you there."
+      },
+      "community_center": {
+        "response": "The community center is on Pine Street, about a 10-minute drive. That's where you go for quilting circle on Thursdays with Margaret. The quilting group meets at 10am."
+      }
+    },
+    "health_and_medicine": {
+      "medicine": {
+        "response": "You take your medicine twice a day. Morning medicine is at 8am and evening medicine is at 9pm. Your pills are in the blue pill box on the kitchen counter. Dr. Chen manages all your medicines."
+      },
+      "pills": {
+        "response": "Your pill box is the blue one on the kitchen counter. You take morning pills at 8am with breakfast and evening pills at 9pm before bed. Each day has its own compartment in the box."
+      },
+      "doctor_appointment": {
+        "response": "You see Dr. Chen every Tuesday afternoon at 2pm at the Riverside Clinic. She's been your doctor for 5 years. Arki or Sarah drives you to your appointments."
+      },
+      "feeling_sick": {
+        "response": "I'm sorry you're not feeling well. If it's not urgent, you can tell Dr. Chen at your next Tuesday appointment. If you need help right now, Sarah's phone number is on the list by the telephone, or you can ask Robert for help."
+      },
+      "allergies": {
+        "response": "You are allergic to penicillin. Dr. Chen has this in your medical records. If anyone asks about your allergies, just tell them penicillin. It's also written on the card in your wallet."
+      },
+      "emergency": {
+        "response": "If this is an emergency, the most important numbers are on the list by the telephone. Sarah's number and Arki's number are both there. You can also call 911. Robert is usually nearby and can help."
+      }
+    },
+    "orientation": {
+      "what_day": {
+        "response": "I can help you with that. You can check the day on the calendar on the kitchen wall. Robert usually circles today's date each morning. If you're unsure, it's okay to ask — that's what I'm here for."
+      },
+      "what_time": {
+        "response": "There's a clock on the living room wall, and one on the kitchen counter. If it's morning, you might be having breakfast. If it's afternoon, you might be reading or in the garden. And in the evening, you and Robert usually watch TV together."
+      },
+      "what_year": {
+        "response": "It's 2026. You were born in 1948, so you're 78 years old. Maya, your granddaughter, is 6 years old now. It's been 51 years since you and Robert got married."
+      },
+      "what_month": {
+        "response": "You can check the calendar on the kitchen wall — Robert keeps it up to date. If it's spring, you'll see the flowers blooming in the garden. If it's winter, Robert usually has a fire going in the living room."
+      },
+      "where_am_i": {
+        "response": "You're at home, at 42 Maple Street. This is the house you and Robert have lived in since 1975. You're safe here. Buddy is probably nearby, and Robert is likely in the house too."
+      },
+      "how_did_i_get_here": {
+        "response": "You're at home, at 42 Maple Street. You've lived here for many years with Robert. If you just came back from somewhere, Arki or Sarah probably drove you. You're safe here."
+      }
+    },
+    "emotions_and_comfort": {
+      "scared": {
+        "response": "It's okay to feel scared sometimes. You are safe at home on Maple Street. Robert is here, and Buddy is nearby. Sarah and Arki are just a phone call away. You are surrounded by people who love you."
+      },
+      "confused": {
+        "response": "It's okay to feel confused. That happens sometimes, and it's nothing to worry about. You're at home, you're safe, and your family loves you. I'm here to help you remember anything you need."
+      },
+      "sad": {
+        "response": "I'm sorry you're feeling sad. It's okay to have those feelings. You have a wonderful family who loves you — Robert, Arki, Sarah, Lisa, and little Maya. Would you like me to tell you about one of them? A happy memory might help."
+      },
+      "lonely": {
+        "response": "I'm sorry you're feeling lonely. Remember, you have people who love you. Sarah calls every Sunday evening. Margaret is just three houses down on Maple Street. And Buddy is always right beside you. You are not alone."
+      },
+      "angry": {
+        "response": "It's okay to feel frustrated sometimes. That's perfectly normal. If something is bothering you, you can talk to Robert about it, or wait until Sarah calls on Sunday. I'm here too, and I'll help however I can."
+      },
+      "love": {
+        "response": "You are very loved! Robert is your husband and adores you. Arki and Sarah are your children and they visit often. Maya, your granddaughter, draws you pictures and calls you 'Nana'. Margaret has been your best friend for over 55 years. And Buddy follows you everywhere because he loves you too."
+      },
+      "does_anyone_love_me": {
+        "response": "Yes, so many people love you! Robert, your husband. Arki and Sarah, your children. Lisa, your daughter-in-law. Maya, your granddaughter who calls you 'Nana'. Margaret, your best friend of 55 years. And Buddy, your golden retriever who follows you everywhere. You are very loved."
+      },
+      "why_cant_i_remember": {
+        "response": "It's okay. Sometimes our memories need a little help, and that's exactly what I'm here for. You can ask me about anything — your family, your routines, your home. I'll always be here to help you remember. You are not alone in this."
+      },
+      "whats_wrong_with_me": {
+        "response": "Nothing is wrong with you. Sometimes our memories just need a little extra help, and that's perfectly okay. Dr. Chen is helping you with that. Your family loves you and is here for you. And I'm here to help you remember anything you need, anytime."
+      },
+      "am_i_okay": {
+        "response": "Yes, you are okay. You are safe at home on Maple Street. Robert is here with you, and Buddy is nearby. Dr. Chen looks after your health every Tuesday. You are loved, you are cared for, and everything is alright."
+      },
+      "i_want_to_go_home": {
+        "response": "You are home, Ellie. This is your house at 42 Maple Street. You and Robert have lived here since 1975. Your garden is in the backyard, the birdhouse Arki built is near the oak tree, and Buddy is here with you. You are safe and home."
+      },
+      "help": {
+        "response": "I'm here to help you. If you need something right away, Robert is nearby, or you can call Sarah or Arki — their numbers are on the list by the telephone. If it's a medical emergency, call 911. Otherwise, just ask me anything and I'll do my best to help you remember."
+      }
+    },
+    "belongings": {
+      "keys": {
+        "response": "Your keys are usually on the hook by the front door. That's where Robert hangs them. If they're not there, check the kitchen counter or the table by the living room chair. Sarah also has a spare key."
+      },
+      "glasses": {
+        "response": "Your glasses are usually on the nightstand in your bedroom, or on the side table in the living room where you read. Sometimes you leave them in the kitchen. You have a spare pair in the drawer of the hallway table."
+      },
+      "wallet": {
+        "response": "Your wallet is usually in your purse, which you keep on the chair by the front door. It has your ID, your allergy card (penicillin), and photos of Maya and Sarah."
+      },
+      "purse": {
+        "response": "Your purse is usually on the chair by the front door. That's where you always put it when you come home. Your wallet, keys, and phone are usually inside."
+      },
+      "phone": {
+        "response": "The house phone is on the table in the hallway. The list of important phone numbers is right next to it — Sarah, Arki, Dr. Chen, and Margaret are all on the list. Sarah also got you a mobile phone, it's usually charging in the kitchen."
+      },
+      "remote": {
+        "response": "The TV remote is usually on the coffee table in the living room, or on the arm of Robert's chair. You and Robert watch TV together in the evenings. You like nature documentaries."
+      },
+      "coat": {
+        "response": "Your coat is in the closet by the front door. Your favorite blue cardigan is usually on the hook behind the bedroom door."
+      }
+    },
+    "food_and_drink": {
+      "tea": {
+        "response": "You love tea! You drink it with milk, no sugar. You usually have a cup with breakfast and another in the afternoon. Your favorite mug is the blue one with flowers that Sarah gave you."
+      },
+      "coffee": {
+        "response": "Robert is the coffee drinker in the family. You prefer tea with milk. But sometimes on special mornings, you enjoy a cup of coffee with cream."
+      },
+      "cookies": {
+        "response": "You and Sarah love making chocolate chip cookies together. It's been your special thing for years. The recipe is in the red cookbook on the kitchen shelf. Sarah comes over on Sundays sometimes and you bake together."
+      },
+      "favorite_food": {
+        "response": "You love roast chicken — it's your specialty. You also enjoy lemon cake (Lisa always brings you one), strawberry jam on toast, and chocolate chip cookies that you bake with Sarah. For a treat, you like vanilla ice cream."
+      },
+      "water": {
+        "response": "There's a glass and a water pitcher on the kitchen counter. Dr. Chen says it's important to drink plenty of water. Try to have a glass with each meal and a few more during the day."
+      },
+      "hungry": {
+        "response": "If you're hungry, there's always food in the kitchen. You usually have toast with jam for breakfast, a sandwich for lunch, and dinner around 6pm. There are snacks in the cupboard too — you like crackers and fruit."
+      }
+    },
+    "hobbies_and_interests": {
+      "quilting": {
+        "response": "You love quilting! You go to the quilting circle every Thursday at 10am at the community center with your best friend Margaret. You've been quilting together for years. You made the blue quilt on your bed."
+      },
+      "reading": {
+        "response": "You love reading! You were a librarian for over 30 years, after all. You enjoy mystery novels and historical fiction. You usually read in the afternoon in your favorite chair in the living room. Your reading glasses are on the side table."
+      },
+      "gardening": {
+        "response": "You love spending time in the garden. Robert tends the roses along the back fence, and you like the flower beds by the patio. You grow tomatoes and herbs in the summer. The garden is through the kitchen door."
+      },
+      "baking": {
+        "response": "You love baking, especially chocolate chip cookies with Sarah. Your recipes are in the red cookbook on the kitchen shelf. You're also known for your apple pie — you make it every Thanksgiving."
+      },
+      "tv": {
+        "response": "You and Robert watch TV together in the evenings after dinner. You enjoy nature documentaries and old movies. Robert likes westerns. The remote is usually on the coffee table."
+      },
+      "music": {
+        "response": "You love listening to music. Your favorite song is 'Moon River' — that's Robert's favorite too, it was your wedding song. You also enjoy Frank Sinatra and old jazz records. Uncle Joe got you into jazz."
+      },
+      "crossword": {
+        "response": "You enjoy doing crossword puzzles! You usually do them in the afternoon with a cup of tea. The puzzle book is on the side table in the living room, next to your reading glasses."
+      },
+      "walking": {
+        "response": "You enjoy walking with Buddy in the mornings. You usually go to the park — left on Maple Street, then right on Oak Avenue. There are nice benches by the pond. Buddy loves chasing the ducks (but he never catches them!)."
+      }
+    },
+    "pets": {
+      "dog_name": {
+        "response": "Your dog's name is Buddy. He is a golden retriever. You got him as a puppy in 2019. He loves belly rubs and follows you everywhere. He sleeps at the foot of your bed every night."
+      },
+      "dog_food": {
+        "response": "Buddy eats twice a day — morning and evening. His food is in the cupboard under the kitchen sink. His bowls are by the back door. Robert usually feeds him in the morning, and you feed him in the evening."
+      },
+      "dog_walk": {
+        "response": "Buddy likes his morning walk. You usually take him to the park — left on Maple Street, right on Oak Avenue. His leash is on the hook by the back door. He loves chasing ducks by the pond!"
+      },
+      "cat": {
+        "response": "You don't have a cat, but you do have a wonderful golden retriever named Buddy! He's been your companion since 2019. He loves belly rubs and sleeping at the foot of your bed."
+      }
+    },
+    "people_not_recognized": {
+      "stranger": {
+        "response": "If someone comes to the door that you don't recognize, it's okay to ask them who they are. You can also ask Robert. If you're unsure, you don't have to open the door. Your family members are: Robert (husband), Arki (son), Sarah (daughter), Lisa (daughter-in-law), and Maya (granddaughter)."
+      },
+      "visitor": {
+        "response": "If someone is visiting and you're not sure who they are, that's okay. Your regular visitors are: Sarah (your daughter, comes on Sundays), Arki and Lisa (your son and daughter-in-law, often come on Saturdays with Maya), and Margaret (your best friend, lives three houses down)."
+      }
+    },
+    "phone_and_communication": {
+      "call_son": {
+        "response": "To call Arki, your son, his phone number is on the list by the telephone in the hallway. You can also ask Robert to help you call. Arki is usually free in the evenings after work."
+      },
+      "call_daughter": {
+        "response": "To call Sarah, your daughter, her phone number is on the list by the telephone in the hallway. Sarah calls you every Sunday evening, but you can call her anytime. She always loves hearing from you."
+      },
+      "call_friend": {
+        "response": "To call Margaret, your best friend, her number is on the list by the telephone in the hallway. She lives just three houses down on Maple Street, so you could also walk over to visit her."
+      },
+      "phone_numbers": {
+        "response": "All your important phone numbers are on the list by the telephone in the hallway. It includes: Sarah (daughter), Arki (son), Dr. Chen (doctor), Margaret (best friend), and the emergency number 911."
+      }
+    },
+    "weather_and_seasons": {
+      "weather": {
+        "response": "You can look out the window to see today's weather. If it's sunny, you might enjoy sitting in the garden. If it's rainy, it's a good day for reading or doing crossword puzzles. Robert usually checks the weather in the morning."
+      },
+      "season": {
+        "response": "You can tell the season by looking at the garden. If Robert's roses are blooming, it's summer. If the leaves are falling, it's autumn. If it's cold and grey, it's winter. And if the daffodils are up, it's spring!"
+      },
+      "christmas": {
+        "response": "Christmas is always special in your family. Sarah comes over and you bake cookies together. The whole family gathers for Christmas dinner. Maya loves opening presents. Robert always picks out a beautiful tree. You make your famous apple pie."
+      },
+      "thanksgiving": {
+        "response": "For Thanksgiving, the whole family comes together. You make your famous apple pie. Sarah helps with the turkey. Arki and Lisa bring Maya, and Margaret often joins too. It's one of your favorite holidays."
+      },
+      "birthday": {
+        "response": "Your birthday is March 15th. Last year, Sarah and Arki surprised you with a small party. Maya drew you a birthday card with butterflies. Your family usually gets you a lemon cake from the bakery on Main Street."
+      }
+    },
+    "practical_tasks": {
+      "how_to_use_phone": {
+        "response": "The house phone is on the table in the hallway. To make a call, pick it up and dial the number. The important numbers are on the list right next to the phone. Sarah also got you a mobile phone — it's usually charging in the kitchen."
+      },
+      "how_to_lock_door": {
+        "response": "The front door locks with the key or the deadbolt. Turn the knob on the inside to lock it. Robert usually locks up at night. If you're unsure, ask Robert — he's happy to help."
+      },
+      "how_to_turn_on_tv": {
+        "response": "The TV remote is on the coffee table. Press the big red button at the top to turn it on. You and Robert usually watch together in the evenings. You like the nature channel."
+      },
+      "mail": {
+        "response": "The mailbox is at the end of the driveway. Robert usually gets the mail in the morning. Important letters go in the basket on the kitchen counter. If you see something from the doctor or the bank, Robert or Sarah can help you with it."
+      }
+    },
+    "past_memories": {
+      "wedding": {
+        "response": "You and Robert got married in 1975. It was a beautiful ceremony. Your dress was ivory with lace sleeves. 'Moon River' was your first dance song. Robert cried when he saw you walking down the aisle. It was one of the happiest days of your life."
+      },
+      "childhood": {
+        "response": "You grew up in Cedar Falls. Your parents were James and Dorothy. You had a brother named Thomas. You loved climbing the big oak tree in the backyard and reading books under it. You went to Cedar Falls High School, where you met Margaret."
+      },
+      "career": {
+        "response": "You were a librarian at the Cedar Falls Public Library for over 30 years. You started in 1980 and retired in 2010. You loved story time with the children. Your coworkers gave you a beautiful scrapbook when you retired."
+      },
+      "parents": {
+        "response": "Your parents were James and Dorothy. They lived in Cedar Falls and raised you and your brother Thomas. Your mother was a wonderful cook — your apple pie recipe is hers. Your father loved woodworking — that's where Arki gets his talent."
+      },
+      "school": {
+        "response": "You went to Cedar Falls High School. That's where you met your best friend Margaret — you've been friends ever since! You were always a great reader and loved English class. You went on to become a librarian."
+      },
+      "first_home": {
+        "response": "Your first home with Robert was a small apartment on Oak Avenue. You moved there right after your wedding in 1975. A year later, you bought the house on Maple Street where you still live today."
+      },
+      "arki_birth": {
+        "response": "Arki was born in 1978. He was your first child. Robert was so excited he called everyone from the hospital. Arki was a curious baby who loved building things with blocks — and now he's a carpenter!"
+      },
+      "sarah_birth": {
+        "response": "Sarah was born in 1996. She was your second child and youngest. Arki was 18 and so proud to be a big brother. Sarah was always a cheerful baby who loved being in the kitchen with you."
+      }
+    },
+    "safety": {
+      "fire": {
+        "response": "If there's a fire, leave the house immediately and call 911. Don't try to put it out yourself. Go to Margaret's house three doors down. The fire extinguisher is under the kitchen sink, but getting out safely is most important."
+      },
+      "fall": {
+        "response": "If you've fallen and can't get up, call for Robert. If he's not nearby, the phone is on the hallway table. Call Sarah or Arki, or call 911 if you're hurt. Stay calm — help will come."
+      },
+      "lost": {
+        "response": "If you're feeling lost, check if you recognize the street name. Your home is at 42 Maple Street. You can ask someone nearby for help, or find a shop and ask them to call Sarah or Arki. Their numbers are on the card in your wallet."
+      },
+      "stranger_at_door": {
+        "response": "If someone you don't recognize comes to the door, you don't have to open it. You can talk through the door and ask who they are. If you're unsure, ask Robert, or call Sarah or Arki. Your family's numbers are by the telephone."
+      },
+      "power_out": {
+        "response": "If the power goes out, there's a flashlight in the kitchen drawer by the sink. Stay calm — Robert will know what to do. If it's nighttime, stay seated until you have the flashlight to avoid tripping."
+      }
+    },
+    "conversation": {
+      "hello": {
+        "response": "Hello, Ellie! It's nice to talk with you. I'm here to help you remember anything you need. You can ask me about your family, your daily routine, or anything else. What would you like to know?"
+      },
+      "thank_you": {
+        "response": "You're welcome, Ellie! I'm always happy to help. Remember, you can ask me anything, anytime. That's what I'm here for."
+      },
+      "goodbye": {
+        "response": "Goodbye for now, Ellie! Remember, I'm always here whenever you need me. You're at home, you're safe, and your family loves you."
+      },
+      "who_are_you": {
+        "response": "I'm Gemma Remember, your memory companion. I'm here to help you remember things about your family, your home, and your daily life. You can ask me anything, and I'll do my best to help. I'm always here for you."
+      },
+      "how_are_you": {
+        "response": "I'm doing well, thank you for asking! More importantly, how are you feeling? If you need anything, just ask. I can tell you about your family, your routine, or help you find something."
+      }
+    }
   }
 }
