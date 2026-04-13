@@ -2,11 +2,32 @@
 let DATA = null;
 let currentPerson = null;
 
+// DiceBear avatar URLs — unique illustrated faces per person
+const AVATARS = {
+  sarah: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Sarah&backgroundColor=FFB6C1',
+  arki: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Arki&backgroundColor=ADD8E6',
+  maya: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Maya&backgroundColor=FFFFC8',
+  robert: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Robert&backgroundColor=C8E6C8',
+  margaret: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Margaret&backgroundColor=E6C8E6',
+  buddy: 'https://api.dicebear.com/9.x/adventurer/svg?seed=BuddyDog&backgroundColor=FFD78C',
+  dr_chen: 'https://api.dicebear.com/9.x/adventurer/svg?seed=DrChen&backgroundColor=DCDCF0',
+  lisa: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Lisa&backgroundColor=FFDAB9',
+  uncle_joe: 'https://api.dicebear.com/9.x/adventurer/svg?seed=UncleJoe&backgroundColor=B4C8B4',
+};
+
+function getAvatarUrl(key) {
+  return AVATARS[key] || `https://api.dicebear.com/9.x/adventurer/svg?seed=${key}`;
+}
+
 async function loadData() {
-  const res = await fetch('responses.json');
-  DATA = await res.json();
-  renderFamily();
-  setTimeOfDay();
+  try {
+    const res = await fetch('responses.json');
+    DATA = await res.json();
+    renderFamily();
+    setTimeOfDay();
+  } catch (e) {
+    console.error('Failed to load data:', e);
+  }
 }
 
 function setTimeOfDay() {
@@ -22,7 +43,6 @@ function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
 
-  // Update tab bar active states
   document.querySelectorAll('.tab-bar .tab').forEach(t => {
     t.classList.remove('active');
     if (t.querySelector('span') && t.querySelector('span').textContent.toLowerCase() === id) {
@@ -32,19 +52,6 @@ function showScreen(id) {
 }
 
 // ===== FAMILY RENDERING =====
-function getInitials(name) {
-  return name.split(' ').map(w => w[0]).join('').toUpperCase();
-}
-
-function getAvatarGradient(color) {
-  // Darken the color slightly for better contrast with white text
-  const r = parseInt(color.slice(1,3),16);
-  const g = parseInt(color.slice(3,5),16);
-  const b = parseInt(color.slice(5,7),16);
-  const darker = `rgb(${Math.max(0,r-40)},${Math.max(0,g-40)},${Math.max(0,b-40)})`;
-  return `linear-gradient(135deg, ${color}, ${darker})`;
-}
-
 function renderFamily() {
   if (!DATA) return;
   const people = DATA.photo_queries;
@@ -57,7 +64,7 @@ function renderFamily() {
     el.className = 'family-thumb';
     el.onclick = () => showPerson(key);
     el.innerHTML = `
-      <div class="avatar" style="background:${getAvatarGradient(p.color)}">${getInitials(p.name)}</div>
+      <img class="avatar avatar-img" src="${getAvatarUrl(key)}" alt="${p.name}">
       <span>${p.name}</span>
     `;
     scroll.appendChild(el);
@@ -71,7 +78,7 @@ function renderFamily() {
     el.className = 'family-card';
     el.onclick = () => showPerson(key);
     el.innerHTML = `
-      <div class="avatar" style="background:${getAvatarGradient(p.color)}">${getInitials(p.name)}</div>
+      <img class="avatar avatar-img" src="${getAvatarUrl(key)}" alt="${p.name}">
       <h4>${p.name}</h4>
       <span>${p.relationship}</span>
     `;
@@ -92,8 +99,8 @@ function showPerson(key) {
   document.getElementById('personAskName').textContent = p.name;
 
   const avatar = document.getElementById('personAvatar');
-  avatar.style.background = getAvatarGradient(p.color);
-  avatar.textContent = getInitials(p.name);
+  avatar.innerHTML = `<img src="${getAvatarUrl(key)}" alt="${p.name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover">`;
+  avatar.style.background = 'none';
 
   const list = document.getElementById('personMemories');
   list.innerHTML = '';
@@ -139,15 +146,12 @@ fileInput.addEventListener('change', function() {
 });
 
 function doIdentify() {
-  if (!DATA) return;
-
-  // Show loading
   const loading = document.getElementById('loading');
-  loading.hidden = false;
+  if (!DATA) { loading.classList.remove('visible'); return; }
 
-  // Simulate inference delay
+  loading.classList.add('visible');
+
   setTimeout(() => {
-    // Pick a random family member for demo (in real app, CLIP would match)
     const keys = Object.keys(DATA.photo_queries);
     const key = keys[Math.floor(Math.random() * keys.length)];
     const p = DATA.photo_queries[key];
@@ -157,12 +161,12 @@ function doIdentify() {
     document.getElementById('resultText').textContent = p.response;
 
     const avatar = document.getElementById('resultAvatar');
-    avatar.style.background = getAvatarGradient(p.color);
-    avatar.textContent = getInitials(p.name);
+    avatar.innerHTML = `<img src="${getAvatarUrl(key)}" alt="${p.name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover">`;
+    avatar.style.background = 'none';
 
     document.getElementById('identifyResult').hidden = false;
     document.getElementById('identifyActions').hidden = true;
-    loading.hidden = true;
+    loading.classList.remove('visible');
   }, 1800);
 }
 
@@ -204,23 +208,19 @@ function sendMessage() {
   if (!text || !DATA) return;
   qInput.value = '';
 
-  // Hide welcome & suggestions after first message
   const empty = document.querySelector('.chat-empty');
   if (empty) empty.style.display = 'none';
   const sug = document.getElementById('askChips');
   if (sug) sug.style.display = 'none';
 
-  // User message
   addMessage(text, 'user');
 
-  // Typing indicator
   const typing = document.createElement('div');
   typing.className = 'msg-typing';
   typing.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
   messagesEl.appendChild(typing);
   scrollChat();
 
-  // Find response
   setTimeout(() => {
     typing.remove();
     const response = findResponse(text);
@@ -231,21 +231,18 @@ function sendMessage() {
 function findResponse(query) {
   const q = query.toLowerCase().trim();
 
-  // Direct match in text queries
   for (const [key, val] of Object.entries(DATA.text_queries)) {
     if (q.includes(key) || key.includes(q)) {
       return val.response;
     }
   }
 
-  // Fuzzy: search for person names
   for (const [key, person] of Object.entries(DATA.photo_queries)) {
     if (q.includes(person.name.toLowerCase())) {
       return person.response;
     }
   }
 
-  // Keyword matching
   const keywords = {
     'cookie': 'sarah', 'bak': 'sarah', 'daughter': 'sarah',
     'dog': 'buddy', 'pet': 'buddy', 'golden': 'buddy', 'retriever': 'buddy',
@@ -264,7 +261,6 @@ function findResponse(query) {
     }
   }
 
-  // Default
   return "I'm not quite sure about that. Could you try asking in a different way? For example, you can ask me about your family members by name, or about your daily routines.";
 }
 
